@@ -15,10 +15,13 @@ class SlingShot{
     }
     attach(body){
         this.sling.bodyA = body;
+        onSling = 1;
+
     }
     
     fly(){
         this.sling.bodyA = null;
+        onSling = 0;
     }
 
     display(){
@@ -43,7 +46,6 @@ class SlingShot{
                 image(this.sling3,pointA.x + 25, pointA.y -10,15,30);
             }
            
-            
             pop();
         }
     }
